@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive menu fijo con JavaScript</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <!-- Icons and font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"> 
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Top bar -->
+        <div class="top">
+            <div class="socialNetworks">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="motto">
+                <h1>Nunca pares de aprender</h1>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="banner">
+            <div class="container">
+                <h1>Aprender desarrollo web con Code Web</h1>
+                <a href="#">Canal de youtube</a>
+            </div>
+        </div>
+
+        <!-- Navigation menu -->
+        <nav id="navigation">
+            <div class="logoContainer"><img src="img/logo.png" width="100%" height="100%"></div>
+
+            <div class="bars">
+                <input type="checkbox" id="btnBars">
+                <label for="btnBars">
+                    <span><span id="line1"></span></span>
+                    <span><span id="line2"></span></span>
+                    <span><span id="line3"></span></span>
+                </label>
+            </div>
+
+            <ul id="navbar">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Content to scroll -->
+    <div class="content"></div>
+
+    <!-- JavaScript file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
